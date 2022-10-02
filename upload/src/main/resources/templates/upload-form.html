@@ -1,16 +1,25 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org"> <head>
-  <meta charset="utf-8"> </head>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8">
+<!--  <script src="http://code.jquery.com/jquery-latest.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
 <body>
 <div class="container">
   <div class="py-5 text-center">
     <h2>상품 등록 폼</h2> </div>
   <h4 class="mb-3">상품 입력</h4>
-  <form th:action method="post" enctype="multipart/form-data">
+<!--  <form th:action method="post" enctype="multipart/form-data">-->
+  <form>
     <ul>
-      <li>상품명 <input type="text" name="itemName"></li>
-      <li>파일<input type="file" name="file" ></li>
+      <li>상품명 <input id="itemName" type="text" name="itemName"></li>
+      <li>파일<input id =file type="file" name="file" ></li>
     </ul>
-    <input type="submit"/> </form>
+<!--    <input type="submit"/> -->
+  </form>
+  <button id="save">전송</button>
+  <script src="/js/item.js"></script>
+
 </div> <!-- /container --> </body>
 </html>
